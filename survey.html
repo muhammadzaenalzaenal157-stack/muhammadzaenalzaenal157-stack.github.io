@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Survey Kepuasan Pelanggan</title>
+    <style>
+        body {
+            font-family: Arial;
+            background-color: #f2f2f2;
+        }
+        .container {
+            width: 400px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        h2 {
+            text-align: center;
+        }
+        input, select, textarea {
+            width: 100%;
+            margin: 5px 0 10px 0;
+            padding: 8px;
+        }
+        .inline {
+            width: auto;
+        }
+        button {
+            padding: 10px;
+            width: 48%;
+            border: none;
+            border-radius: 5px;
+        }
+        .submit {
+            background-color: green;
+            color: white;
+        }
+        .reset {
+            background-color: red;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Survey Kepuasan Pelanggan</h2>
+
+    <form>
+
+        <!-- Data Pelanggan -->
+        <label>Nama:</label>
+        <input type="text" placeholder="Masukkan nama">
+
+        <label>Alamat:</label>
+        <input type="text" placeholder="Masukkan alamat">
+
+        <label>No. Telepon:</label>
+        <input type="text" placeholder="Masukkan nomor telepon">
+
+        <!-- Dropdown -->
+        <label>Kategori Pelanggan:</label>
+        <select>
+            <option>-- Pilih Kategori --</option>
+            <option>Pelanggan Baru</option>
+            <option>Pelanggan Tetap</option>
+            <option>Pelanggan VIP</option>
+        </select>
+
+        <!-- Checkbox -->
+        <label>Produk yang disukai:</label><br>
+        <input type="checkbox" class="inline"> Produk A<br>
+        <input type="checkbox" class="inline"> Produk B<br>
+        <input type="checkbox" class="inline"> Produk C<br>
+
+        <br>
+
+        <!-- Radio Button -->
+        <label>Tingkat Kepuasan:</label><br>
+        <input type="radio" name="kepuasan" class="inline"> Sangat Puas<br>
+        <input type="radio" name="kepuasan" class="inline"> Puas<br>
+        <input type="radio" name="kepuasan" class="inline"> Cukup<br>
+        <input type="radio" name="kepuasan" class="inline"> Tidak Puas<br>
+
+        <br>
+
+        <!-- Text Area -->
+        <label>Komentar:</label>
+        <textarea rows="4" placeholder="Tulis komentar..."></textarea>
+
+        <br>
+
+        <!-- Button -->
+        <button type="submit" class="submit">Submit</button>
+        <button type="reset" class="reset">Reset</button>
+
+    </form>
+</div>
+
+</body>
+</html>
