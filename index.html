@@ -1,13 +1,45 @@
-<html>
+<!DOCTYPE html>
+<html lang="id">
 <head>
-    <title>Website Zaenal</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | M Zaenal Profil</title>
+    <!-- Link CSS Eksternal -->
+    <link rel="stylesheet" href="style.css">
 </head>
+<body>
 
-<frameset cols="20%,80%" border="0">
+    <!-- NAVBAR -->
+    <nav>
+        <div class="logo">M Zaenal.</div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Kontak</a></li>
+        </ul>
+    </nav>
 
-    <frame src="menu.html" noresize>
-    <frame src="home.html" name="kanan">
+    <!-- KONTEN UTAMA -->
+    <section class="container animasi-masuk">
+        <div class="card">
+            <!-- Foto Profil -->
+            <img src="foto.jpg" alt="Foto M Zaenal" class="profile-img">
+            
+            <h1>M Zaenal Khoirul Zaman</h1>
+            <p class="subtitle">Mahasiswa Teknik Informatika</p>
 
-</frameset>
+            <div class="info-section">
+                <h2>Profil Singkat</h2>
+                <p>Halo! Nama saya Zaenal, seorang mahasiswa Teknik Informatika di Universitas Halim Sanusi Bandung. Saya memiliki ketertarikan besar dalam dunia pengembangan web dan teknologi masa depan.</p>
+                <br>
+                <p><b>NIM:</b> 124005056</p>
+                <p><b>Program Studi:</b> Teknik Informatika</p>
+                <p><b>Fakultas:</b> Teknik & Desain</p>
+            </div>
 
+            <a href="about.html" class="btn">Selengkapnya</a>
+        </div>
+    </section>
+
+</body>
 </html>

@@ -1,101 +1,94 @@
 <!DOCTYPE html>
-<html>
+<html lang="id">
 <head>
-    <title>Survey Kepuasan Pelanggan</title>
-    <style>
-        body {
-            font-family: Arial;
-            background-color: #f2f2f2;
-        }
-        .container {
-            width: 400px;
-            margin: auto;
-            background: white;
-            padding: 20px;
-            border-radius: 10px;
-        }
-        h2 {
-            text-align: center;
-        }
-        input, select, textarea {
-            width: 100%;
-            margin: 5px 0 10px 0;
-            padding: 8px;
-        }
-        .inline {
-            width: auto;
-        }
-        button {
-            padding: 10px;
-            width: 48%;
-            border: none;
-            border-radius: 5px;
-        }
-        .submit {
-            background-color: green;
-            color: white;
-        }
-        .reset {
-            background-color: red;
-            color: white;
-        }
-    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey | M Zaenal Profil</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<div class="container">
-    <h2>Survey Kepuasan Pelanggan</h2>
+    <!-- NAVBAR -->
+    <nav>
+        <div class="logo">M Zaenal.</div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Kontak</a></li>
+        </ul>
+    </nav>
 
-    <form>
+    <!-- KONTEN UTAMA -->
+    <section class="container animasi-masuk">
+        <div class="card">
+            <h1>Survey Kepuasan</h1>
+            <p class="subtitle">Bantu kami meningkatkan kualitas layanan</p>
 
-        <!-- Data Pelanggan -->
-        <label>Nama:</label>
-        <input type="text" placeholder="Masukkan nama">
+            <form>
+                <!-- Data Pelanggan -->
+                <label>Nama Lengkap:</label>
+                <input type="text" placeholder="Masukkan nama Anda">
 
-        <label>Alamat:</label>
-        <input type="text" placeholder="Masukkan alamat">
+                <label>Alamat:</label>
+                <input type="text" placeholder="Masukkan alamat lengkap">
 
-        <label>No. Telepon:</label>
-        <input type="text" placeholder="Masukkan nomor telepon">
+                <label>No. Telepon:</label>
+                <input type="tel" placeholder="Contoh: 08123456789">
 
-        <!-- Dropdown -->
-        <label>Kategori Pelanggan:</label>
-        <select>
-            <option>-- Pilih Kategori --</option>
-            <option>Pelanggan Baru</option>
-            <option>Pelanggan Tetap</option>
-            <option>Pelanggan VIP</option>
-        </select>
+                <!-- Dropdown -->
+                <label>Kategori Pelanggan:</label>
+                <select>
+                    <option disabled selected>-- Pilih Kategori --</option>
+                    <option>Pelanggan Baru</option>
+                    <option>Pelanggan Tetap</option>
+                    <option>Pelanggan VIP</option>
+                </select>
 
-        <!-- Checkbox -->
-        <label>Produk yang disukai:</label><br>
-        <input type="checkbox" class="inline"> Produk A<br>
-        <input type="checkbox" class="inline"> Produk B<br>
-        <input type="checkbox" class="inline"> Produk C<br>
+                <!-- Checkbox -->
+                <label>Produk yang Disukai:</label>
+                <div class="option-group">
+                    <label class="inline-option">
+                        <input type="checkbox"> Layanan Web Design
+                    </label>
+                    <label class="inline-option">
+                        <input type="checkbox"> Pengembangan Aplikasi
+                    </label>
+                    <label class="inline-option">
+                        <input type="checkbox"> Konsultasi IT
+                    </label>
+                </div>
 
-        <br>
+                <!-- Radio Button -->
+                <label>Tingkat Kepuasan:</label>
+                <div class="option-group">
+                    <label class="inline-option">
+                        <input type="radio" name="kepuasan"> Sangat Puas
+                    </label>
+                    <label class="inline-option">
+                        <input type="radio" name="kepuasan"> Puas
+                    </label>
+                    <label class="inline-option">
+                        <input type="radio" name="kepuasan"> Cukup
+                    </label>
+                    <label class="inline-option">
+                        <input type="radio" name="kepuasan"> Tidak Puas
+                    </label>
+                </div>
 
-        <!-- Radio Button -->
-        <label>Tingkat Kepuasan:</label><br>
-        <input type="radio" name="kepuasan" class="inline"> Sangat Puas<br>
-        <input type="radio" name="kepuasan" class="inline"> Puas<br>
-        <input type="radio" name="kepuasan" class="inline"> Cukup<br>
-        <input type="radio" name="kepuasan" class="inline"> Tidak Puas<br>
+                <!-- Text Area -->
+                <label>Komentar & Saran:</label>
+                <textarea rows="4" placeholder="Tulis masukan Anda di sini..."></textarea>
 
-        <br>
-
-        <!-- Text Area -->
-        <label>Komentar:</label>
-        <textarea rows="4" placeholder="Tulis komentar..."></textarea>
-
-        <br>
-
-        <!-- Button -->
-        <button type="submit" class="submit">Submit</button>
-        <button type="reset" class="reset">Reset</button>
-
-    </form>
-</div>
+                <!-- Button -->
+                <div class="btn-group">
+                    <button type="submit" class="btn-submit">Kirim Survey</button>
+                    <button type="reset" class="btn-reset">Reset</button>
+                </div>
+            </form>
+            
+            <p style="color: #94a3b8; font-size: 12px; margin-top: 40px; text-align: center;">&copy; 2024 M Zaenal Khoirul Zaman - UTS Pemrograman Web</p>
+        </div>
+    </section>
 
 </body>
 </html>
